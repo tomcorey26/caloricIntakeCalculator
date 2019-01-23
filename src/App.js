@@ -80,8 +80,8 @@ class NameForm extends React.Component {
   }
   //have this return handle intake
   handleSubmit(event) {
-    alert('A gender was submitted: ' + this.state.gender);
     let calories = this.renderIntake(this.state.gender,this.state.age,this.state.weight,this.state.height,this.state.actLevel);
+    alert('Your daily caloric Intake is ' + calories);
     console.log(calories);
     event.preventDefault();
   }
