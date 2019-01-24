@@ -1,5 +1,8 @@
+
 .App {
+  overflow: hidden;
   text-align: center;
+  padding-top: 20px;
 }
 
 .App-logo {
@@ -20,6 +23,36 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.theRow {
+  padding-bottom: 20px;
+}
+
+.theCalc {
+  text-align: left;
+  display: inline-block;
+  border: 5px solid #F0F8FF;
+  background-color: #87CEEB;
+  padding:25px;
+  
+}
+
+
+#submit {
+  display: block;
+  max-width: 300px;
+  margin: auto;
+  width:60%;
+}
+
+#submit:hover {
+  
+}
+
+#intake {
+  text-align:center;
+  padding-top:10px;
 }
 
 @keyframes App-logo-spin {
