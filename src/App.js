@@ -17,7 +17,6 @@ class NameForm extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   renderIntake(gender,age,weight,height,actLevel){
-    console.log(this.state);
     let modifiers = {
       male: {
         weight: 6.23,
@@ -54,14 +53,12 @@ class NameForm extends Component {
     const target = event.target;
     const value = target.value;
     const name = target.name;
-    console.log(value);
     this.setState({
       [name]: value
     });
   }
   //have this return handle intake
   handleSubmit(event) {
-    console.log(this.state);
     let calories = this.renderIntake(this.state.gender,this.state.age,this.state.weight,this.state.height,this.state.actLevel);
     let round = Math.floor(calories);
     this.setState({intake: round});
